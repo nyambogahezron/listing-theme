@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Job-List</title>
+  </head>
+  <body class="">
+    <nav class="flex justify-between items-center mb-4">
+      <!-- logo -->
+      <div class=" ">
+        <a href="index.html"
+          ><img class="logo w-20 h-10" src="images/logo.png" alt=""
+        /></a>
+      </div>
+      <ul class="flex space-x-6 mr-6 text-lg">
+        <li>
+          <a href="register.html" class="hover:text-laravel"
+            ><i class="fa-solid fa-user-plus"></i> Register</a
+          >
+        </li>
+        <li>
+          <a href="login.html" class="hover:text-laravel"
+            ><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Search -->
+      <form action="">
+        <div class="relative border-2 border-gray-100 m-4 rounded-lg">
+          <div class="absolute top-4 left-3">
+            <i class="fa fa-search text-gray-400 z-20 hover:text-gray-500"></i>
+          </div>
+          <input
+            type="text"
+            name="search"
+            class="h-14 w-full pl-10 pr-20 rounded-lg z-0 focus:shadow focus:outline-none"
+            placeholder="Search Laravel Gigs..."
+          />
+          <div class="absolute top-2 right-2">
+            <button
+              type="submit"
+              class="h-10 w-20 text-white rounded-lg bg-red-500 hover:bg-red-600"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </form>
+      <a href="index.html" class="inline-block text-black ml-4 mb-4"
+        ><i class="fa-solid fa-arrow-left"></i> Back
+      </a>
+      <div class="mx-4">
+        <div class="bg-gray-50 border border-gray-200 p-10 rounded">
+          <div class="flex flex-col items-center justify-center text-center">
+            <img class="w-48 mr-6 mb-6" src="images/acme.png" alt="" />
+
+            <h3 class="text-2xl mb-2">Senior Laravel Developer</h3>
+            <div class="text-xl font-bold mb-4">Acme Corp</div>
+            <ul class="flex">
+              <li class="bg-black text-white rounded-xl px-3 py-1 mr-2">
+                <a href="#">Laravel</a>
+              </li>
+              <li class="bg-black text-white rounded-xl px-3 py-1 mr-2">
+                <a href="#">API</a>
+              </li>
+              <li class="bg-black text-white rounded-xl px-3 py-1 mr-2">
+                <a href="#">Backend</a>
+              </li>
+              <li class="bg-black text-white rounded-xl px-3 py-1 mr-2">
+                <a href="#">Vue</a>
+              </li>
+            </ul>
+            <div class="text-lg my-1">
+              <i class="fa-solid fa-location-dot"></i> Daytona, FL
+            </div>
+            <div class="text-lg text-green-700 my-1">
+              <i class="fa-solid fa-location-dot"></i> Active
+            </div>
+            <div class="text-lg my-1">
+              <i class="fa-solid fa-location-dot"></i> Dateline
+            </div>
+            <div class="border border-gray-200 w-full mb-6"></div>
+
+            <div>
+              <h3 class="text-3xl font-bold mb-4">Job Description</h3>
+              <div class="text-lg space-y-6">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Eligendi non reprehenderit facilis architecto autem quam
+                  necessitatibus, odit quod, repellendus voluptate cum.
+                  Necessitatibus a id tenetur. Error numquam at modi quaerat.
+                </p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Quaerat praesentium eos consequuntur ex voluptatum
+                  necessitatibus odio quos cupiditate iste similique rem in,
+                  voluptates quod maxime animi veritatis illum quo sapiente.
+                </p>
+
+                <a
+                  href="mailto:test@test.com"
+                  class="block w-1/2 mx-auto bg-laravel text-white mt-6 py-2 rounded-xl hover:opacity-80"
+                  ><i class="fa-solid fa-envelope"></i> Contact Employer</a
+                >
+
+                <a
+                  href="https://test.com"
+                  target="_blank"
+                  class="block w-1/2 mx-auto bg-black text-white py-2 rounded-xl hover:opacity-80"
+                  ><i class="fa-solid fa-globe"></i> Visit Website</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ##### footer ###  -->
+    <footer
+      class="bg-laravel text-white mt-24 opacity-90 md:justify-center bottom-0 left-0 w-full item-center justify-start font-bold text-sm p-8"
+    >
+      <div
+        class="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col"
+      >
+        <!-- col 1 start -->
+        <div class="flex flex-col items-start">
+          <a href="index.html"
+            ><img class="logo w-20 h-10" src="images/logo.png" alt=""
+          /></a>
+          <div
+            class="mt-6 text-base capitalize leading-7 text-white- sm:max-w-sm"
+          >
+            Job-List is a free service, Interview fee is not required<br />
+            You are One step to find you dream Job or candidates.
+          </div>
+
+          <div class="">
+            <div class="mt-3 text-slate-800">Social Media Links</div>
+
+            <div class="gap-6 mx-2 mt-4 flex justify-center items-center">
+              <img
+                src="images/facebook.svg"
+                alt="facebook icon"
+                srcset=""
+                class="hover:bg-blue-600 w-12 h-12 bg-white rounded-full"
+              />
+              <img
+                src="images/linkedin.svg"
+                alt="linkedin icon"
+                srcset=""
+                class="hover:bg-blue-600 w-12 h-12 bg-white rounded-full"
+              />
+              <img
+                src="images/instagram.svg"
+                alt="instagram icon"
+                srcset=""
+                class="hover:bg-blue-600 w-12 h-12 bg-white rounded-full"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- col 1 ends  -->
+
+        <!-- col 2 start -->
+        <div class="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
+          <div>
+            <h4
+              class="font-montserrat text-xl leading-normal font-medium mb-6 text-slate-800"
+            >
+              Candidates
+            </h4>
+            <ul>
+              <li
+                class="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray hover:text-slate-800"
+              >
+                <a href="#">Job List</a>
+              </li>
+              <li
+                class="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray hover:text-slate-800"
+              >
+                <a href="#">Opportunities</a>
+              </li>
+              <li
+                class="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray hover:text-slate-800"
+              >
+                <a href="#">Tenders</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- col 2 ends  -->
+
+        <!-- col 3 start -->
+        <div class="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
+          <div>
+            <h4
+              class="font-montserrat text-xl leading-normal font-medium mb-6 text-slate-800"
+            >
+              Employers
+            </h4>
+            <ul>
+              <li
+                class="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray hover:text-slate-800"
+              >
+                <a href="#">Employee Account</a>
+              </li>
+              <li
+                class="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray hover:text-slate-800"
+              >
+                <a href="#">Post A Job</a>
+              </li>
+              <li
+                class="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray hover:text-slate-800"
+              >
+                <a href="#">Blogs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- col 3 ends  -->
+
+        <!-- col 4 start -->
+        <div class="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
+          <div>
+            <h4
+              class="font-montserrat text-xl leading-normal font-medium mb-6 text-slate-800"
+            >
+              More
+            </h4>
+            <ul>
+              <li
+                class="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray hover:text-slate-800"
+              >
+                <a href="#">Home</a>
+              </li>
+              <li
+                class="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray hover:text-slate-800"
+              >
+                <a href="#">About Us</a>
+              </li>
+              <li
+                class="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray hover:text-slate-800"
+              >
+                <a href="#">Links</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- col 4 ends  -->
+      </div>
+
+      <!-- copyright section start -->
+      <div
+        class="relative bottom-0 left-0 w-full flex items-center justify-center font-bold border-t pt-3 mt-5"
+      >
+        <p class="text-sm">Copyright &copy; 2022, All Rights reserved</p>
+      </div>
+      <!-- copyright section ends -->
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Job-List</title>
+  </head>
+  <body class="">
+    <header>
+      <nav class="flex justify-between items-center mb-4">
+        <!-- logo -->
+        <div class=" ">
+          <a href="index.html"
+            ><img class="logo w-20 h-10" src="images/logo.png" alt=""
+          /></a>
+        </div>
+
+        <!-- nav links -->
+        <ul class="flex space-x-6 text-lg">
+          <li>
+            <a href="register.html" class="hover:text-laravel"
+              ><i class="fa-solid fa-user-plus"></i> About Us</a
+            >
+          </li>
+          <li>
+            <a href="register.html" class="hover:text-laravel"
+              ><i class="fa-solid fa-user-plus"></i> Opportunities</a
+            >
+          </li>
+          <li>
+            <a href="register.html" class="hover:text-laravel"
+              ><i class="fa-solid fa-user-plus"></i> Tenders</a
+            >
+          </li>
+          <li>
+            <a href="register.html" class="hover:text-laravel"
+              ><i class="fa-solid fa-user-plus"></i> Employers</a
+            >
+          </li>
+          <li>
+            <a href="register.html" class="hover:text-laravel"
+              ><i class="fa-solid fa-user-plus"></i> Career</a
+            >
+          </li>
+        </ul>
+        <ul class="flex space-x-6 mr-6 text-lg">
+          <li>
+            <a href="register.html" class="hover:text-laravel"
+              ><i class="fa-solid fa-user-plus"></i> Register</a
+            >
+          </li>
+          <li>
+            <a href="login.html" class="hover:text-laravel"
+              ><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a
+            >
+          </li>
+          <li>
+            <a
+              href="login.html"
+              class="bg-laravel text-white font-bold border py-1 px-2 hover:bg-blue-600"
+              ><i class="fa-solid fa-arrow-right-to-bracket"></i> POST JOB</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section
+      class="relative h-55 bg-laravel flex flex-col justify-center align-center text-center space-y-4 pb-3 mb-4"
+    >
+      <!-- <div
+        class="absolute top-0 left-0 w-full h-full opacity-10 bg-no-repeat bg-center"
+        style="background-image: url('images/laravel-logo.png')"
+      >
+    </div> -->
+
+      <div class="z-10 relative">
+        <!-- <div class="hero-logo"> -->
+        <div class="text-center">
+          <h1 class="text-6xl font-bold uppercase text-white">
+            Job<span class="text-black">List</span>
+          </h1>
+        </div>
+        <p class="text-2xl text-gray-200 font-bold my-4">
+          Find or Post Jobs, Proposals & Projects
+        </p>
+        <div class="flex justify-center items-center space-x-3">
+          <div>
+            <a
+              href="register.html"
+              class="inline-block border-2 border-white text-white py-2 px-4 rounded-xl uppercase mt-2 hover:text-black hover:border-black"
+              >Sign Up As Job Seeker
+            </a>
+          </div>
+          <div>
+            <a
+              href="register.html"
+              class="inline-block border-2 border-white text-white py-2 px-4 rounded-xl uppercase mt-2 hover:text-black hover:border-black"
+              >Sign Up As Employee
+            </a>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+    </section>
+
+    <main>
+      <!-- Search -->
+      <form action="">
+        <div class="relative border-2 border-gray-100 m-4 rounded-lg">
+          <div class="absolute top-4 left-3">
+            <i class="fa fa-search text-gray-400 z-20 hover:text-gray-500"></i>
+          </div>
+          <input
+            type="text"
+            name="search"
+            class="h-14 w-full pl-10 pr-20 rounded-lg z-0 focus:shadow focus:outline-none"
+            placeholder="Search Job..."
+          />
+          <div class="absolute top-2 right-2">
+            <button
+              type="submit"
+              class="h-10 w-20 text-white rounded-lg bg-red-500 hover:bg-red-600"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <div class="lg:grid lg:grid-cols-2 gap-4 space-y-4 md:space-y-0 mx-4">
+        <!-- Item 1 -->
+        <div class="bg-gray-50 border-b border-t border-gray-200 rounded p-6">
+          <div class="flex">
+            <img class="w-40 mr-4 md:block" src="images/acme.png" alt="" />
+            <div class="pl-3">
+              <!-- title and company name  -->
+              <h3 class="text-xl hover:underline hover:text-blue-700">
+                <a href="show.html">Senior Laravel Developer</a>
+              </h3>
+              <div class="text-xl font-bold mb-4">Acme Corp</div>
+              <!-- tags list -->
+              <ul class="flex">
+                <li
+                  class="flex items-center justify-center bg-red-200 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">Laravel</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">API</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">Backend</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600 transition-[0.5s]"
+                >
+                  <a href="#">Vue</a>
+                </li>
+              </ul>
+              <!-- tags list ends  -->
+              <div class="flex gap-x-4">
+                <div class="text-lg mt-2 text-slate-700">
+                  <i class="fa-solid fa-location-dot"></i> Boston, MA
+                </div>
+                <div class="text-lg mt-2 text-slate-700">
+                  <i class="fa-solid fa-location-dot"></i> Dateline:
+                </div>
+              </div>
+              <div class="text-lg mt-4">
+                <i class="fa-solid fa-location-dot"></i> View Job
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Item 1 -->
+        <div class="bg-gray-50 border-b border-t border-gray-200 rounded p-6">
+          <div class="flex">
+            <img class="w-40 mr-4 md:block" src="images/acme.png" alt="" />
+            <div class="pl-3">
+              <!-- title and company name  -->
+              <h3 class="text-xl hover:underline hover:text-blue-700">
+                <a href="show.html">Senior Laravel Developer</a>
+              </h3>
+              <div class="text-xl font-bold mb-4">Acme Corp</div>
+              <!-- tags list -->
+              <ul class="flex">
+                <li
+                  class="flex items-center justify-center bg-red-200 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">Laravel</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">API</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">Backend</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600 transition-[0.5s]"
+                >
+                  <a href="#">Vue</a>
+                </li>
+              </ul>
+              <!-- tags list ends  -->
+              <div class="flex gap-x-4">
+                <div class="text-lg mt-2 text-slate-700">
+                  <i class="fa-solid fa-location-dot"></i> Boston, MA
+                </div>
+                <div class="text-lg mt-2 text-slate-700">
+                  <i class="fa-solid fa-location-dot"></i> Dateline:
+                </div>
+              </div>
+              <div class="text-lg mt-4">
+                <i class="fa-solid fa-location-dot"></i> View Job
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Item 1 -->
+        <div class="bg-gray-50 border-b border-t border-gray-200 rounded p-6">
+          <div class="flex">
+            <img class="w-40 mr-4 md:block" src="images/acme.png" alt="" />
+            <div class="pl-3">
+              <!-- title and company name  -->
+              <h3 class="text-xl hover:underline hover:text-blue-700">
+                <a href="show.html">Senior Laravel Developer</a>
+              </h3>
+              <div class="text-xl font-bold mb-4">Acme Corp</div>
+              <!-- tags list -->
+              <ul class="flex">
+                <li
+                  class="flex items-center justify-center bg-red-200 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">Laravel</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">API</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">Backend</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600 transition-[0.5s]"
+                >
+                  <a href="#">Vue</a>
+                </li>
+              </ul>
+              <!-- tags list ends  -->
+              <div class="flex gap-x-4">
+                <div class="text-lg mt-2 text-slate-700">
+                  <i class="fa-solid fa-location-dot"></i> Boston, MA
+                </div>
+                <div class="text-lg mt-2 text-slate-700">
+                  <i class="fa-solid fa-location-dot"></i> Dateline:
+                </div>
+              </div>
+              <div class="text-lg mt-4">
+                <i class="fa-solid fa-location-dot"></i> View Job
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Item 1 -->
+        <div class="bg-gray-50 border-b border-t border-gray-200 rounded p-6">
+          <div class="flex">
+            <img class="w-40 mr-4 md:block" src="images/acme.png" alt="" />
+            <div class="pl-3">
+              <!-- title and company name  -->
+              <h3 class="text-xl hover:underline hover:text-blue-700">
+                <a href="show.html">Senior Laravel Developer</a>
+              </h3>
+              <div class="text-xl font-bold mb-4">Acme Corp</div>
+              <!-- tags list -->
+              <ul class="flex">
+                <li
+                  class="flex items-center justify-center bg-red-200 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">Laravel</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">API</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">Backend</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600 transition-[0.5s]"
+                >
+                  <a href="#">Vue</a>
+                </li>
+              </ul>
+              <!-- tags list ends  -->
+              <div class="flex gap-x-4">
+                <div class="text-lg mt-2 text-slate-700">
+                  <i class="fa-solid fa-location-dot"></i> Boston, MA
+                </div>
+                <div class="text-lg mt-2 text-slate-700">
+                  <i class="fa-solid fa-location-dot"></i> Dateline:
+                </div>
+              </div>
+              <div class="text-lg mt-4">
+                <i class="fa-solid fa-location-dot"></i> View Job
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Item 1 -->
+        <div class="bg-gray-50 border-b border-t border-gray-200 rounded p-6">
+          <div class="flex">
+            <img class="w-40 mr-4 md:block" src="images/acme.png" alt="" />
+            <div class="pl-3">
+              <!-- title and company name  -->
+              <h3 class="text-xl hover:underline hover:text-blue-700">
+                <a href="show.html">Senior Laravel Developer</a>
+              </h3>
+              <div class="text-xl font-bold mb-4">Acme Corp</div>
+              <!-- tags list -->
+              <ul class="flex">
+                <li
+                  class="flex items-center justify-center bg-red-200 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">Laravel</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">API</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">Backend</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600 transition-[0.5s]"
+                >
+                  <a href="#">Vue</a>
+                </li>
+              </ul>
+              <!-- tags list ends  -->
+              <div class="flex gap-x-4">
+                <div class="text-lg mt-2 text-slate-700">
+                  <i class="fa-solid fa-location-dot"></i> Boston, MA
+                </div>
+                <div class="text-lg mt-2 text-slate-700">
+                  <i class="fa-solid fa-location-dot"></i> Dateline:
+                </div>
+              </div>
+              <div class="text-lg mt-4">
+                <i class="fa-solid fa-location-dot"></i> View Job
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Item 1 -->
+        <div class="bg-gray-50 border-b border-t border-gray-200 rounded p-6">
+          <div class="flex">
+            <img class="w-40 mr-4 md:block" src="images/acme.png" alt="" />
+            <div class="pl-3">
+              <!-- title and company name  -->
+              <h3 class="text-xl hover:underline hover:text-blue-700">
+                <a href="show.html">Senior Laravel Developer</a>
+              </h3>
+              <div class="text-xl font-bold mb-4">Acme Corp</div>
+              <!-- tags list -->
+              <ul class="flex">
+                <li
+                  class="flex items-center justify-center bg-red-200 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">Laravel</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">API</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">Backend</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600 transition-[0.5s]"
+                >
+                  <a href="#">Vue</a>
+                </li>
+              </ul>
+              <!-- tags list ends  -->
+              <div class="flex gap-x-4">
+                <div class="text-lg mt-2 text-slate-700">
+                  <i class="fa-solid fa-location-dot"></i> Boston, MA
+                </div>
+                <div class="text-lg mt-2 text-slate-700">
+                  <i class="fa-solid fa-location-dot"></i> Dateline:
+                </div>
+              </div>
+              <div class="text-lg mt-4">
+                <i class="fa-solid fa-location-dot"></i> View Job
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Item 1 -->
+        <div class="bg-gray-50 border-b border-t border-gray-200 rounded p-6">
+          <div class="flex">
+            <img class="w-40 mr-4 md:block" src="images/acme.png" alt="" />
+            <div class="pl-3">
+              <!-- title and company name  -->
+              <h3 class="text-xl hover:underline hover:text-blue-700">
+                <a href="show.html">Senior Laravel Developer</a>
+              </h3>
+              <div class="text-xl font-bold mb-4">Acme Corp</div>
+              <!-- tags list -->
+              <ul class="flex">
+                <li
+                  class="flex items-center justify-center bg-red-200 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">Laravel</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">API</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">Backend</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600 transition-[0.5s]"
+                >
+                  <a href="#">Vue</a>
+                </li>
+              </ul>
+              <!-- tags list ends  -->
+              <div class="flex gap-x-4">
+                <div class="text-lg mt-2 text-slate-700">
+                  <i class="fa-solid fa-location-dot"></i> Boston, MA
+                </div>
+                <div class="text-lg mt-2 text-slate-700">
+                  <i class="fa-solid fa-location-dot"></i> Dateline:
+                </div>
+              </div>
+              <div class="text-lg mt-4">
+                <i class="fa-solid fa-location-dot"></i> View Job
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Item 1 -->
+        <div class="bg-gray-50 border-b border-t border-gray-200 rounded p-6">
+          <div class="flex">
+            <img class="w-40 mr-4 md:block" src="images/acme.png" alt="" />
+            <div class="pl-3">
+              <!-- title and company name  -->
+              <h3 class="text-xl hover:underline hover:text-blue-700">
+                <a href="show.html">Senior Laravel Developer</a>
+              </h3>
+              <div class="text-xl font-bold mb-4">Acme Corp</div>
+              <!-- tags list -->
+              <ul class="flex">
+                <li
+                  class="flex items-center justify-center bg-red-200 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">Laravel</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">API</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600"
+                >
+                  <a href="#">Backend</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-blue-600 text-white rounded-xl py-1 px-3 mr-2 text-xs hover:bg-blue-600 transition-[0.5s]"
+                >
+                  <a href="#">Vue</a>
+                </li>
+              </ul>
+              <!-- tags list ends  -->
+              <div class="flex gap-x-4">
+                <div class="text-lg mt-2 text-slate-700">
+                  <i class="fa-solid fa-location-dot"></i> Boston, MA
+                </div>
+                <div class="text-lg mt-2 text-slate-700">
+                  <i class="fa-solid fa-location-dot"></i> Dateline:
+                </div>
+              </div>
+              <div class="text-lg mt-4">
+                <i class="fa-solid fa-location-dot"></i> View Job
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="bg-gray-50 border border-gray-200 rounded p-6">
+          <div class="flex">
+            <img
+              class="hidden w-48 mr-6 md:block"
+              src="images/stark.png"
+              alt=""
+            />
+            <div>
+              <h3 class="text-2xl">
+                <a href="show.html">Full-Stack Engineer</a>
+              </h3>
+              <div class="text-xl font-bold mb-4">Stark Industries</div>
+              <ul class="flex">
+                <li
+                  class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
+                >
+                  <a href="#">Laravel</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
+                >
+                  <a href="#">API</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
+                >
+                  <a href="#">Backend</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
+                >
+                  <a href="#">Vue</a>
+                </li>
+              </ul>
+              <div class="text-lg mt-4">
+                <i class="fa-solid fa-location-dot"></i>
+                Lawrence, MA
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="bg-gray-50 border border-gray-200 rounded p-6">
+          <div class="flex">
+            <img
+              class="hidden w-48 mr-6 md:block"
+              src="images/wayne.png"
+              alt=""
+            />
+            <div>
+              <!-- title  -->
+              <h3 class="text-2xl">
+                <a href="show.html">Laravel Developer</a>
+              </h3>
+              <div class="text-xl font-bold mb-4">Wayne Enterprises</div>
+              <!-- tags  -->
+              <ul class="flex">
+                <li
+                  class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
+                >
+                  <a href="#">Laravel</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
+                >
+                  <a href="#">API</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
+                >
+                  <a href="#">Backend</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
+                >
+                  <a href="#">Vue</a>
+                </li>
+              </ul>
+              <div class="text-lg mt-4">
+                <i class="fa-solid fa-location-dot"></i> Newark, NJ
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="bg-gray-50 border border-gray-200 rounded p-6">
+          <div class="flex">
+            <img
+              class="hidden w-48 mr-6 md:block"
+              src="images/skynet.png"
+              alt=""
+            />
+            <div>
+              <h3 class="text-2xl">
+                <a href="show.html">Backend Laravel Dev</a>
+              </h3>
+              <div class="text-xl font-bold mb-4">Skynet Systems</div>
+              <ul class="flex">
+                <li
+                  class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
+                >
+                  Laravel
+                </li>
+                <li
+                  class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
+                >
+                  API
+                </li>
+                <li
+                  class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
+                >
+                  Backend
+                </li>
+                <li
+                  class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
+                >
+                  Vue
+                </li>
+              </ul>
+              <div class="text-lg mt-4">
+                <i class="fa-solid fa-location-dot"></i>
+                Daytona, FL
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ##### footer ###  -->
+    <footer
+      class="bg-laravel text-white mt-24 opacity-90 md:justify-center bottom-0 left-0 w-full item-center justify-start font-bold text-sm p-8"
+    >
+      <div
+        class="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col"
+      >
+        <!-- col 1 start -->
+        <div class="flex flex-col items-start">
+          <a href="index.html"
+            ><img class="logo w-20 h-10" src="images/logo.png" alt=""
+          /></a>
+          <div
+            class="mt-6 text-base capitalize leading-7 text-white- sm:max-w-sm"
+          >
+            Job-List is a free service, Interview fee is not required<br />
+            You are One step to find you dream Job or candidates.
+          </div>
+
+          <div class="">
+            <div class="mt-3 text-slate-800">Social Media Links</div>
+
+            <div class="gap-6 mx-2 mt-4 flex justify-center items-center">
+              <img
+                src="images/facebook.svg"
+                alt="facebook icon"
+                srcset=""
+                class="hover:bg-blue-600 w-12 h-12 bg-white rounded-full"
+              />
+              <img
+                src="images/linkedin.svg"
+                alt="linkedin icon"
+                srcset=""
+                class="hover:bg-blue-600 w-12 h-12 bg-white rounded-full"
+              />
+              <img
+                src="images/instagram.svg"
+                alt="instagram icon"
+                srcset=""
+                class="hover:bg-blue-600 w-12 h-12 bg-white rounded-full"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- col 1 ends  -->
+
+        <!-- col 2 start -->
+        <div class="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
+          <div>
+            <h4
+              class="font-montserrat text-xl leading-normal font-medium mb-6 text-slate-800"
+            >
+              Candidates
+            </h4>
+            <ul>
+              <li
+                class="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray hover:text-slate-800"
+              >
+                <a href="#">Job List</a>
+              </li>
+              <li
+                class="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray hover:text-slate-800"
+              >
+                <a href="#">Opportunities</a>
+              </li>
+              <li
+                class="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray hover:text-slate-800"
+              >
+                <a href="#">Tenders</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- col 2 ends  -->
+
+        <!-- col 3 start -->
+        <div class="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
+          <div>
+            <h4
+              class="font-montserrat text-xl leading-normal font-medium mb-6 text-slate-800"
+            >
+              Employers
+            </h4>
+            <ul>
+              <li
+                class="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray hover:text-slate-800"
+              >
+                <a href="#">Employee Account</a>
+              </li>
+              <li
+                class="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray hover:text-slate-800"
+              >
+                <a href="#">Post A Job</a>
+              </li>
+              <li
+                class="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray hover:text-slate-800"
+              >
+                <a href="#">Blogs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- col 3 ends  -->
+
+        <!-- col 4 start -->
+        <div class="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
+          <div>
+            <h4
+              class="font-montserrat text-xl leading-normal font-medium mb-6 text-slate-800"
+            >
+              More
+            </h4>
+            <ul>
+              <li
+                class="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray hover:text-slate-800"
+              >
+                <a href="#">Home</a>
+              </li>
+              <li
+                class="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray hover:text-slate-800"
+              >
+                <a href="#">About Us</a>
+              </li>
+              <li
+                class="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray hover:text-slate-800"
+              >
+                <a href="#">Links</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- col 4 ends  -->
+      </div>
+
+      <!-- copyright section start -->
+      <div
+        class="relative bottom-0 left-0 w-full flex items-center justify-center font-bold border-t pt-3 mt-5"
+      >
+        <p class="text-sm">Copyright &copy; 2022, All Rights reserved</p>
+      </div>
+      <!-- copyright section ends -->
+    </footer>
+  </body>
+</html>
